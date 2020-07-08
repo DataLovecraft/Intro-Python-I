@@ -4,7 +4,17 @@
 
 
 
-def is_even():
+def is_even(num):
+    """
+    Function to determing if number is even
+
+    Args:
+        int: A number
+
+    Returns:
+        bool: True if even, False if not
+
+    """
     if num % 2 == 0:
         return True
     else:
@@ -17,8 +27,22 @@ num = int(num)
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
 # YOUR CODE HERE
-def is_even():
-    if num % 2 == 0:
+def print_even(num):
+    """
+    Function to print out "even!" if the
+    number is even. Otherwise print "odd".
+
+    args:
+
+
+    Returns:
+
+
+    """
+    if is_even(num) == True:
         print("Even!")
     else:
         print("Odd")
+
+
+print(print_even(num))

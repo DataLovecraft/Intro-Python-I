@@ -35,13 +35,13 @@ from datetime import datetime
 # receive user input as argument input (we're not going to be using the `input`)
 # sys.argv is a list of the args that the user provides at the start of the program
 num_args = len(sys.argv)
-​
+
 # init an instance of the text calendar class
 cal = calendar.TextCalendar()
-​
+
 month = datetime.now().month
 year = datetime.now().year
-​
+
 # if user specified no args:
 if num_args == 1:
     # print current month and year
@@ -63,7 +63,7 @@ else:
     print("usage: cal.py [month] [year]")
     # exit the program
     sys.exit(1)
-​
+
 # we need to print out a formatted calendar
 cal.prmonth(year, month)
 
