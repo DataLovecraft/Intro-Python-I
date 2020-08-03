@@ -1,8 +1,9 @@
 # For the exercise, look up the methods and functions that are available for use
 # with Python lists.
+from typing import List
 
-x: list = [1, 2, 3]
-y: list = [8, 9, 10]
+x: List[int] = [1, 2, 3]
+y: List[int] = [8, 9, 10]
 
 # For the following, DO NOT USE AN ASSIGNMENT (=).
 

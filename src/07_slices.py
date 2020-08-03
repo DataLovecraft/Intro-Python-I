@@ -8,8 +8,9 @@ overview: https://stackoverflow.com/a/509295
 
 Use Python's slice syntax to achieve the following:
 """
+from typing import List
 
-a = [2, 4, 1, 7, 9, 6]
+a: List[int] = [2, 4, 1, 7, 9, 6]
 
 # Output the second element: 4:
 print(a[1])
@@ -31,7 +32,7 @@ print(a[:-1])
 
 # For string s...
 
-s = "Hello, world!"
+s: str = "Hello, world!"
 
 # Output just the 8th-12th characters: "world"
 print(s[-6:])

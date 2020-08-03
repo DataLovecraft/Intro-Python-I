@@ -17,6 +17,7 @@
 
 
 # we can add this to a function:
-def hello_world() -> str:
+def hello_world() -> None:
     return print("Hello, world!")
+
 

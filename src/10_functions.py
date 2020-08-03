@@ -3,8 +3,7 @@
 # YOUR CODE HERE
 
 
-
-def is_even(num):
+def is_even(num: int) -> bool:
     """
     Function to determing if number is even
 
@@ -27,7 +26,7 @@ num = int(num)
 # Print out "Even!" if the number is even. Otherwise print "Odd"
 
 # YOUR CODE HERE
-def print_even(num):
+def print_even(num: int):
     """
     Function to print out "even!" if the
     number is even. Otherwise print "odd".

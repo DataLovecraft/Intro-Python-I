@@ -16,9 +16,11 @@ automatically.
 # Example:
 
 import math
+from typing import Tuple
 
-def dist(a, b):
+def dist(a: Tuple[int, int], b: Tuple[int, int]) -> float:
     """Compute the distance between two x,y points."""
+        
     x0, y0 = a  # Destructuring assignment
     x1, y1 = b
 
@@ -33,11 +35,10 @@ print("Distance is: {:.2f}".format(dist(a, b)))
 # Write a function `print_tuple` that prints all the values in a tuple
 from typing import Tuple
 
-def print_tuple(t: Tuple[int]) -> Tuple[int]:
-    for i in t:
-        print(i)
+def print_tuple(t: Tuple[int, ...]) -> None:
+    return print(t[:])
 
-t: Tuple[int] = (1, 2, 5, 7, 99)
+t: Tuple[int, ...] = (1, 2, 5, 7, 99)
 print_tuple(t)  # Prints 1 2 5 7 99, one per line
 
 # Declare a tuple of 1 element then print it

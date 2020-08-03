@@ -4,7 +4,7 @@
 # Write a function f1 that takes two integer positional arguments and returns
 # the sum. This is what you'd consider to be a regular, normal function.
 
-def f1(x, y):
+def f1(x: int, y: int) -> int:
     return x + y
 
 print(f1(1, 2))
@@ -13,7 +13,7 @@ print(f1(1, 2))
 # sum.
 # Note: Google for "python arbitrary arguments" and look for "*args"
 
-def f2(*args):
+def f2(*args: int):
     return sum(args)
 
 print(f2(1))                    # Should print 1
@@ -31,7 +31,7 @@ print(f2(*a))    # Should print 22
 # arguments.
 # Note: Google "python default arguments" for a hint.
 
-def f3(x, y=1):
+def f3(x: int, y: int=1):
     return x + y
 
 print(f3(1, 2))  # Should print 3
