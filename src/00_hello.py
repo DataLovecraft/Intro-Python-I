@@ -7,13 +7,14 @@
       None
 
     Returns:
-      str: "Hello, world!"
+      None
 
     Raises:
       None
 
 """
-#print('Hello, World')
+# %% Print
+print('Hello, World')
 
 
 # we can add this to a function:

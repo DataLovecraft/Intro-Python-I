@@ -5,6 +5,18 @@
 # the sum. This is what you'd consider to be a regular, normal function.
 
 def f1(x: int, y: int) -> int:
+    """
+    Function that takes two integers
+    and returns the sum.
+
+    Args:
+        param1: int
+        param2: int
+
+    Returns:
+        int
+
+    """
     return x + y
 
 print(f1(1, 2))
@@ -13,7 +25,18 @@ print(f1(1, 2))
 # sum.
 # Note: Google for "python arbitrary arguments" and look for "*args"
 
-def f2(*args: int):
+def f2(*args: int) -> int:
+    """
+    Function that takess any number of integer
+    arguments and returns the sum
+
+    Args:
+        *args: int
+
+    Returns:
+        int
+
+    """
     return sum(args)
 
 print(f2(1))                    # Should print 1
@@ -31,7 +54,22 @@ print(f2(*a))    # Should print 22
 # arguments.
 # Note: Google "python default arguments" for a hint.
 
+# %% function 3
 def f3(x: int, y: int=1):
+    """
+    Function that accepts either one or two arguments
+    and returns either the sum, if two args, or param + 1
+
+    Args:
+        param1: int
+        param2: int
+
+    returns:
+        If one arg, int + 1
+        if two args, sum of the arms
+
+    """
+
     return x + y
 
 print(f3(1, 2))  # Should print 3
@@ -46,6 +84,7 @@ print(f3(8))     # Should print 9
 #
 # Note: Google "python keyword arguments".
 
+# %% function 4
 def f4(**kwargs):
     for key, value in kwargs.items():
         print(f'key: {key}, value: {value}')

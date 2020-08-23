@@ -12,13 +12,12 @@ x: int = 5
 y: str = "7"
 
 # Write a print statement that combines x + y into the integer value 12
-
 number: int = (x + int(y))
 print(number)
 print(type(number))
 assert number == 12
-# Write a print statement that combines x + y into the string value 57
 
+# Write a print statement that combines x + y into the string value 57
 string: str = (str(x) + y)
 print(string)
 print(type(string))
